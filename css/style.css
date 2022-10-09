@@ -32,8 +32,9 @@ body{
 .navbar{
     display: flex;
     margin: .5rem;
+    padding: 0;
     border-radius: 1rem;
-    width: 100%;
+    width: 96%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +45,21 @@ body{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+}
+@media (min-width:530px){
+    .navbar{
+        width: 97%;
+    }
+}
+@media (min-width:700px){
+    .navbar{
+        width: 98%;
+    }
+}
+@media (min-width:1080px){
+    .navbar{
+        width: 99%;
+    }
 }
 @media (min-width:768px){
     .navbar{
@@ -116,8 +132,9 @@ body{
 
 
 .header{
-    padding-top: 3rem;
-    height: 400px;
+    padding-top:8rem;
+    padding-bottom: 2rem;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +207,30 @@ body{
 .adicional a.link:hover{
     color: white;
 }
+.link--activo{
+    font-weight: 700;
+}
+.link--activo::after{
+    content: "";
+    display: block;
+    margin: auto;
+    width: 10px;
+    height: 5px;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: rgb(13, 152, 211);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.link--activo:hover::after{
+    width: 80%;
+}
 
 /*INDEX*/
 .index {
@@ -225,6 +266,64 @@ body{
 .index .button:hover{
     box-shadow: 3px 10px 20px rgba(134, 210, 215, 0.468), -3px -10px 20px rgba(150, 82, 156, 0.269);
     color: rgb(11, 127, 190);
+}
+
+.beneficios__bg{
+    height: 350px;
+    background-color: rgb(49, 114, 119);
+}
+
+.beneficios__tarjetas{
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+
+}
+.beneficios__contenido{
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: -250px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.beneficios__bg h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+.tarjeta{
+    background-color: white;
+    border: solid 1px rgb(179, 179, 179);
+    width: 190px;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (min-width:760px){
+    .tarjeta{
+        width: 250px;
+        font-size: 1rem;
+    }
+}
+.tarjeta__img{
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    object-position: center;
+}
+@media (min-width:760px){
+    .tarjeta__img{
+        height: 200px;
+    }
+}
+.tarjeta__body{
+    text-align: center;
+    padding: .7rem .7rem;
 }
 
 /*mision*/
