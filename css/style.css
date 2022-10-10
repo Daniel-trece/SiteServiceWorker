@@ -61,6 +61,9 @@ body{
         width: 99%;
     }
 }
+#menu-button img{
+    width: 40px;
+}
 @media (min-width:768px){
     .navbar{
         flex-direction: row;
@@ -111,8 +114,12 @@ body{
 #close{
     display: flex;
     justify-content: center;
+    gap: 1rem;
     color: black;
     align-items: center;
+}
+#close img{
+    width: 13px;
 }
 .--cerrado{
     overflow: hidden;
@@ -420,6 +427,7 @@ input, textarea{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    color: rgb(56, 56, 56);
     align-items: center;
     border-radius: 1rem;
     border: solid 1px rgb(232, 232, 232);

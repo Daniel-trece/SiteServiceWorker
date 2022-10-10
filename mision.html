@@ -12,12 +12,7 @@
         <nav class="navbar">
             <div class="navbar__responsive">
                 <h2 class="navbar__titulo">Funded Corporation</h2>
-                <button id="menu-button"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <line x1="4" y1="6" x2="20" y2="6"></line>
-                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                    <line x1="4" y1="18" x2="20" y2="18"></line>
-                 </svg></button>
+                <button id="menu-button"><img src="./img/menu.png" alt=""></button>
             </div>
             <div class="navbar__enlaces --cerrado">
                 <a class="enlace__navbar" href="/index.html">Página principal</a>
@@ -25,11 +20,7 @@
                 <a class="enlace__navbar link--activo" href="/mision.html">Misión</a>
                 <a class="enlace__navbar" href="/vision.html">Visión</a>
                 <a class="enlace__navbar" href="/contacto.html">Contacto</a>
-                <a href="#" id="close" class="enlace__navbar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                 </svg> Cerrar Menu</a>
+                <a href="#" id="close" class="enlace__navbar"><img src="/img/cerrar.png" alt=""> Cerrar Menu</a>
             </div>
         </nav>
         <section class="header">
@@ -75,11 +66,22 @@
                 <li><a class="link" href="Mailto:soporte@gmail.com">@soportetecnico</a></li>
                 <li><a href="#" class="link">Politicas de Privacidad</a></li>
                 <li><a href="#" class="link">Avisos Legales</a></li>
-                <li><a href="https://www.flaticon.es/iconos-gratis/vision" title="vision iconos">Iconos creados por kerismaker - Flaticon</a></li>
             </ul>
         </div>
     </footer>
 
     <script src="./js/menu.js"></script>
+
+    <script>
+        if('serviceWorker' in navigator){
+            window.addEventListener('load', () => {
+                console.log('La App está cargada');
+                navigator.serviceWorker.register('./serviceWorker.js')
+                .then(() => {
+                    console.log('Service Worker Regustrado')
+                })
+            })
+        }
+    </script>
 </body>
 </html>
