@@ -12,6 +12,8 @@ let cacheAssets = [
     //CSS
     '/css/style.css',
     //IMG
+    '/img/icon64.png',
+    '/img/icon128.png',
     '/img/header.png',
     '/img/mision.png',
     '/img/vision.png',
