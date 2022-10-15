@@ -15,6 +15,7 @@ let cacheAssets = [
     '/img/favicon.ico',
     '/img/icon64.png',
     '/img/icon128.png',
+    '/img/icon248.png',
     '/img/header.png',
     '/img/mision.png',
     '/img/vision.png',
