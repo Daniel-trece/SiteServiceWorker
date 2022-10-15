@@ -1,7 +1,8 @@
 {
     "name": "Practica Service Worker",
     "short_name": "ServiceWorker",
-    "start_url": "/",
+    "scope":"./",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#fff",
     "description": "Practica de service worker para la asignatura PWA",
